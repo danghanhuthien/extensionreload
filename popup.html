@@ -1,0 +1,11 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const checkbox = document.getElementById('autoRefreshCheckbox');
+
+  chrome.storage.sync.get(['autoRefreshEnabled'], function(result) {
+    checkbox.checked = result.autoRefreshEnabled || false;
+  });
+
+  checkbox.addEventListener('change', function() {
+    chrome.storage.sync.set({ autoRefreshEnabled: checkbox.checked });
+  });
+});
