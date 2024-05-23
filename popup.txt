@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Auto Refresh Extension</title>
+    <style>
+      body { width: 200px; }
+      h1 { font-size: 20px; }
+    </style>
+  </head>
+  <body>
+    <h1>Auto Refresh</h1>
+    <label>
+      <input type="checkbox" id="autoRefreshCheckbox"> Enable Auto Refresh
+    </label>
+    <script src="popup.js"></script>
+  </body>
+</html>
